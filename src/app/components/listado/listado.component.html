@@ -18,7 +18,7 @@
   </thead>
   <tbody>
       <tr *ngFor="let f of frutas">
-          <td><a [routerLink]="['../formulario', f.id]">{{f.nombre}}</a></td>
+          <td><a [routerLink]="['../formulario', f.id]" class="text-danger">{{f.nombre}}</a></td>
           <td>{{(f.precio - (f.descuento * f.precio) / 100) | number: '1.0-2': 'es'}}</td>
           <td>{{f.calorias}}</td>
           <td>{{f.colores | json}}</td>

@@ -72,7 +72,7 @@
 
     <input type="submit" class="btn btn-angular btn-block" value="{{(fruta.id===-1)? 'Crear' : 'Modificar'}}" [disabled]="formulario.status === 'INVALID'" />
 
-    <a *ngIf="fruta.id != -1" (click)="eliminar(fruta.id)" [routerLink]="['../../crud-frutas']" routerLinkActive="router-link-active"  class="btn btn-delete btn-block text-white">Eliminar</a>
+    <a *ngIf="fruta.id != -1" (click)="eliminar(fruta.id)" [routerLink]="['../../listado']" routerLinkActive="router-link-active"  class="btn btn-delete btn-block text-white">Eliminar</a>
 
   </form>
   

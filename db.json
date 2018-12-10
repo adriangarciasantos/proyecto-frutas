@@ -79,26 +79,6 @@
       "descuento": "0",
       "cantidad": 0,
       "id": 10
-    },
-    {
-      "nombre": "Arándanos",
-      "precio": 2.75,
-      "calorias": 120,
-      "colores": [
-        [
-          {
-            "color": "Azul"
-          },
-          {
-            "color": "Rojo"
-          }
-        ]
-      ],
-      "oferta": true,
-      "imagen": "https://engorda.org/wp-content/uploads/2018/01/arandanos-engorda.jpg",
-      "descuento": 20,
-      "cantidad": 0,
-      "id": 11
     }
   ]
 }
