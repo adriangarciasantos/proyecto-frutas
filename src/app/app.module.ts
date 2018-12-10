@@ -17,6 +17,7 @@ import { Page404Component } from './components/page404/page404.component';
 import { FrutaService } from './providers/fruta.service';
 import { ListadoComponent } from './components/listado/listado.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { LoginComponent } from './components/login/login.component';
 
 //Guards
 
@@ -27,7 +28,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     FrutaCardComponent,
     Page404Component,
     ListadoComponent,
-    FormularioComponent
+    FormularioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

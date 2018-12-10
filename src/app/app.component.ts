@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LoginService } from './providers/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyecto-frutas';
+
+  constructor(private loginService: LoginService, private router: Router) {
+    console.trace('AppComponent constructor');
+  }
+
+  ngOnInit() {
+    console.trace('AppComponent ngOnInit');
+  }
+
+  logout(){
+    console.trace('AppComponent logout');
+
+    this.loginService.logout();
+    this.router.navigate(['login']);
+
+  }
+
 }
