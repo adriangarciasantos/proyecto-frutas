@@ -10,3 +10,14 @@
 img{
     max-width: 100%;
 }
+
+.btn-angular{
+    background-color: var(--color-angular);
+    color: var(--color-white);
+}
+
+.btn-angular:hover{
+    color: var(--color-angular) !important;
+    background-color: var(--color-white);
+    border-color: var(--color-angular);
+}

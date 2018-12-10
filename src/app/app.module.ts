@@ -15,6 +15,8 @@ import { Page404Component } from './components/page404/page404.component';
 
 //Providers o servicios
 import { FrutaService } from './providers/fruta.service';
+import { ListadoComponent } from './components/listado/listado.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 //Guards
 
@@ -23,7 +25,9 @@ import { FrutaService } from './providers/fruta.service';
     AppComponent,
     ComparadorComponent,
     FrutaCardComponent,
-    Page404Component
+    Page404Component,
+    ListadoComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,

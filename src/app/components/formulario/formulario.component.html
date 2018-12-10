@@ -1,0 +1,79 @@
+<h1>Formulario reactivo</h1>
+<a href="https://angular.io/guide/reactive-forms" target="_blank" class="documentacion">Documentación Oficial</a>
+
+<!--
+<div class="row mt-4 mb-4">
+  <button class="btn btn-info" (click)="cargarFormulario()">Cargar Formulario</button>
+</div>
+-->
+<div class="row">
+  <p>{{formulario.value | json}}</p>
+  <p>{{formulario.status | json}}</p>
+</div>
+  
+  <!-- Importante desactivar las validaciones en HTML5 -->
+  <form [formGroup]="formulario" (ngSubmit)="sumitar()" novalidate>
+
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Min 2 y max 50" />
+      <small *ngIf="formulario.controls.nombre.invalid && formulario.controls.nombre.touched" class="form-text text-danger">Mínimo 2 letras máximo 50 letras</small>
+      <small *ngIf="formulario.controls.nombre.valid && formulario.controls.nombre.touched" class="form-text text-success">Correcto</small>
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" formControlName="precio" class="form-control" id="precio" min="0.01" max="999" step="0.01" />
+      <small *ngIf="formulario.controls.precio.invalid && formulario.controls.precio.touched" class="form-text text-danger">Mínimo 0,01 máximo 999</small>
+      <small *ngIf="formulario.controls.precio.valid && formulario.controls.precio.touched" class="form-text text-success">Correcto</small>
+    </div>
+
+    <div class="form-group">
+      <label for="calorias">Calorías:</label>
+      <input type="number" formControlName="calorias" class="form-control" id="calorias" min="0" max="999" />
+      <small *ngIf="formulario.controls.calorias.invalid && formulario.controls.calorias.touched" class="form-text text-danger">Mínimo 0,01 máximo 999</small>
+      <small *ngIf="formulario.controls.calorias.valid && formulario.controls.calorias.touched" class="form-text text-success">Correcto</small>
+    </div>
+
+    <div class="form-group">
+      <label class="mr-2">Colores:</label>
+      <a (click)="nuevoColor()" class="btn btn-angular mb-2 text-white">Nuevo color</a>
+      <div formArrayName="colores">
+        <div *ngFor="let color of formulario.get('colores').controls; let i=index;">
+          <div [formGroupName]="i" class="mb-2 divColor">
+            <input formControlName="color" type="text" class="form-control" />
+            <i (click)="eliminarColor(i)" class="fas fa-times-circle text-danger borrarColor"></i>
+            <small *ngIf="formulario.get('colores').controls[i].invalid" class="form-text text-danger">Mínimo 2 letras y máximo 15</small>
+            <small *ngIf="formulario.get('colores').controls[i].valid" class="form-text text-success">Correcto</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="oferta">Oferta:</label>
+      <input type="checkbox" formControlName="oferta" id="oferta" />
+    </div>
+
+    <div class="form-group" [hidden]="!formulario.controls.oferta.value">
+      <label for="descuento">Descuento:</label>
+      <input type="number" formControlName="descuento" class="form-control" id="descuento" min="0" max="100" step="5" maxlength="2" />
+      <small *ngIf="formulario.controls.descuento.invalid && formulario.controls.descuento.touched" class="form-text text-danger">Mínimo 5% máximo 90%</small>
+      <small *ngIf="formulario.controls.descuento.valid && formulario.controls.descuento.touched" class="form-text text-success">Correcto</small>
+    </div>
+
+    <div class="form-group">
+      <label for="imagen">Imagen:</label>
+      <img src="{{formulario.controls.imagen.value}}" alt="Imagen destacada" class="imgDestacada" />
+      <input type="text" formControlName="imagen" class="form-control" id="imagen" placeholder="URL de la imagen con extensión .png o .jp(e)g" />
+      <small *ngIf="formulario.controls.imagen.invalid && formulario.controls.imagen.touched" class="form-text text-danger">Formato inadecuado .png o .jpg o .jpeg</small>
+      <small *ngIf="formulario.controls.imagen.valid && formulario.controls.imagen.touched" class="form-text text-success">Correcto</small>
+    </div>
+
+    <input type="submit" class="btn btn-angular btn-block" value="{{(fruta.id===-1)? 'Crear' : 'Modificar'}}" [disabled]="formulario.status === 'INVALID'" />
+
+    <a *ngIf="fruta.id != -1" (click)="eliminar(fruta.id)" [routerLink]="['../../crud-frutas']" routerLinkActive="router-link-active"  class="btn btn-delete btn-block text-white">Eliminar</a>
+
+  </form>
+  
+<p *ngIf="msg != ''" class="text-success msgCreada"><b>{{msg}}</b></p>

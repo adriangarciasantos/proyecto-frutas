@@ -1,0 +1,40 @@
+.documentacion{
+    color: var(--color-angular);
+}
+
+.imgDestacada{
+    width:100px;
+    height:100px;
+}
+
+.divColor{
+    position:relative;
+}
+
+.borrarColor{
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
+.borrarColor:hover{
+    cursor:pointer;
+}
+
+.msgCreada{
+    margin:2em 0;
+    padding:1em 0;
+    text-align: center;
+    background-color: rgba(0,255,0,0.4);
+}
+
+.btn-delete{
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.btn-delete:hover{
+    color: var(--color-black) !important;
+    background-color: var(--color-white);
+    border-color: var(--color-black);
+}
