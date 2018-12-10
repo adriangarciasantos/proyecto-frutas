@@ -79,6 +79,26 @@
       "descuento": "0",
       "cantidad": 0,
       "id": 10
+    },
+    {
+      "nombre": "Arándanos",
+      "precio": 2.75,
+      "calorias": 120,
+      "colores": [
+        [
+          {
+            "color": "Azul"
+          },
+          {
+            "color": "Rojo"
+          }
+        ]
+      ],
+      "oferta": true,
+      "imagen": "https://www.abc.es/Media/201507/29/arandanos--644x362.jpg",
+      "descuento": 20,
+      "cantidad": 0,
+      "id": 11
     }
   ]
 }
