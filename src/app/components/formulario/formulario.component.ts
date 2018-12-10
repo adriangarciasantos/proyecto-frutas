@@ -122,13 +122,13 @@ export class FormularioComponent implements OnInit {
     this.formulario.controls.descuento.setValue(this.fruta.descuento);
     this.formulario.controls.imagen.setValue(this.fruta.imagen);
     
-    let arrayColores = this.formulario.get('colores') as FormArray;
+    let arrayColores = this.formulario.get('colores').value as FormArray;
 
     this.fruta.colores.forEach(color => {
       arrayColores.push(this.crearColorFormGroup(color));
     });
 
-    this.formulario.controls.colores.setValue(this.fruta.colores);
+    this.formulario.controls.colores.setValue(arrayColores);
   }
 
   sumitar(){

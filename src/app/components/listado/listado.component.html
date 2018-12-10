@@ -10,7 +10,6 @@
           <th>Nombre</th>
           <th>Precio</th>
           <th>Calorías</th>
-          <th>Colores</th>
           <th>Oferta</th>
           <th>Descuento</th>
           <th>Imagen</th>
@@ -21,8 +20,7 @@
           <td><a [routerLink]="['../formulario', f.id]" class="text-danger">{{f.nombre}}</a></td>
           <td>{{(f.precio - (f.descuento * f.precio) / 100) | number: '1.0-2': 'es'}}</td>
           <td>{{f.calorias}}</td>
-          <td>{{f.colores | json}}</td>
-          <td>{{(f.oferta? 'Sí' : 'No')}}</td>
+          <td>{{(f.oferta)? 'Sí' : 'No'}}</td>
           <td>{{f.descuento}}</td>
           <td><img src="{{f.imagen}}" alt="Imagen_fruta" class="imgFruta" /></td>
       </tr>
@@ -32,7 +30,6 @@
           <th>Nombre</th>
           <th>Precio</th>
           <th>Calorías</th>
-          <th>Colores</th>
           <th>Oferta</th>
           <th>Descuento</th>
           <th>Imagen</th>

@@ -3,12 +3,12 @@
 
   <ul class="nav justify-content-between menu">
     <li class="nav-item">
-      <a class="nav-link imgCabecera" [routerLink]="['inicio']"><img src="./assets/img/frutas.jpg" alt="Imagen-frutas"></a>
+      <a class="nav-link" id="enlaceImgCabecera" [routerLink]="['inicio']"><img src="./assets/img/frutas.png" class="imgCabecera" alt="Imagen-frutas"></a>
     </li>
 
   <div>
     <li class="nav-item">
-      <a class="nav-link btn btn-angular" [routerLink]="['listado']">Zona privada</a>
+      <a class="nav-link btn btn-angular" [routerLink]="['listado']">{{(isLogged())? 'Listado' : 'Zona privada'}}</a>
     </li>
     <li *ngIf="isLogged()" class="nav-item mt-2">
       <button (click)="logout()" class="btn btn-cerrar-sesion">Cerrar sesión</button>
