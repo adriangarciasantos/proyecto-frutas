@@ -9,6 +9,18 @@
     height:100px;
     }
 
+    .btn-cerrar-sesion{
+        color: var(--color-white);
+        background-color: #333;
+        width:135px;
+    }
+
+    .btn-cerrar-sesion:hover{
+        color: #333;
+        background-color: var(--color-white);
+        border-color: #333;
+    }
+
 }
 
 

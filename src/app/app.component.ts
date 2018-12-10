@@ -18,6 +18,16 @@ export class AppComponent {
     console.trace('AppComponent ngOnInit');
   }
 
+  isLogged(): boolean{
+    
+    if(!this.loginService.isLogged()){
+      return false;
+    }
+
+    return true;
+
+  }
+
   logout(){
     console.trace('AppComponent logout');
 
