@@ -1,0 +1,20 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-head">
+    <img class="card-img-top" src="{{fruta.imagen}}" alt="Card image cap">  
+    <span class="calorias">{{fruta.calorias | number: '1.0-2': 'es'}} Kcal</span>
+    <span *ngIf="fruta.oferta" class="descuento">{{fruta.descuento}} %</span>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{fruta.nombre}}</h5>
+    <p *ngIf="!fruta.oferta" class="card-text">{{fruta.precio | number: '1.0-2': 'es'}}&euro;</p>
+    <p *ngIf="fruta.oferta" class="card-text"><del>{{fruta.precio | number: '1.0-2': 'es'}} &euro;</del> {{(fruta.precio - (fruta.descuento * fruta.precio) / 100) | number: '1.0-2': 'es'}} &euro;</p>
+    <button (click)="comprar(event)" class="btn btn-comprar btn-block">Comprar</button>
+  </div>
+
+  <!-- Comparador -->
+  <div *ngIf="fruta2">
+    <p>Precio <span class="{{(fruta.precio - fruta2.precio > 0)? 'positivo' : 'negativo'}}">{{fruta.precio - fruta2.precio | number: '1.0-2': 'es'}}</span> &euro;</p>
+    <p>Calorías <span class="{{(fruta.calorias - fruta2.calorias > 0)? 'negativo' : 'positivo'}}">{{fruta.calorias - fruta2.calorias}}</span> Kcal</p>
+  </div>
+
+</div>

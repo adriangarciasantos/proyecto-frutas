@@ -1,0 +1,53 @@
+.card{
+
+    div.card-head{
+        position: relative;
+        padding:1em;
+        min-height:40vh;
+        max-height:40vh;
+
+        .descuento{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--color-angular);
+            border-radius: 50%;
+            color: var(--color-white);
+            font-size: 1.2em;
+            width:60px;
+            height:60px;
+            padding: 10px 5px;
+            font-weight: bold;
+            text-align:center;
+            padding-top:0.75em;
+        }
+
+        .calorias{
+            position: absolute;
+            right:10px;
+            bottom:10px;
+            font-size:1.3em;
+            color:var(--color-verde-calorias);
+        }
+
+    }
+
+    .positivo{
+        color:var(--color-verde-calorias);
+    }
+
+    .negativo{
+        color:#f00;
+    }
+
+}
+.btn-comprar{
+    background-color: var(--color-angular);
+    color: var(--color-white);
+}
+
+.btn-comprar:hover{
+    background-color: var(--color-white);
+    color: var(--color-angular);
+    border-color: var(--color-angular);
+}

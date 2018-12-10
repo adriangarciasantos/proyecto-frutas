@@ -1,0 +1,84 @@
+{
+    "frutas": [
+        {
+          "id": 1,
+          "nombre": "Kiwi",
+          "precio": 3.46,
+          "calorias": 24,
+          "oferta": true,
+          "imagen": "https://www.cmdsport.com/app/uploads/2017/02/beneficios-kiwi-fuente-energia.jpeg",
+          "descuento": 10,
+          "cantidad": 0
+        },
+        {
+          "id": 3,
+          "nombre": "Melón",
+          "precio": 7.66,
+          "calorias": 45,
+          "oferta": true,
+          "imagen": "https://www.gob.mx/cms/uploads/article/main_image/63826/melon-secundaria-1.jpg",
+          "descuento": 8,
+          "cantidad": 0
+        },
+        {
+          "id": 4,
+          "nombre": "Pomelo",
+          "precio": 2.5,
+          "calorias": 13,
+          "oferta": false,
+          "imagen": "http://frutasfercas.com/wp-content/uploads/2018/03/pomelo-1.jpg",
+          "descuento": 0,
+          "cantidad": 0
+        },
+        {
+          "nombre": "Sandía",
+          "precio": 4.5,
+          "calorias": "340",
+          "oferta": true,
+          "imagen": "http://frutas.consumer.es/sites/default/files/sandia.jpg",
+          "descuento": "15",
+          "cantidad": 0,
+          "id": 5
+        },
+        {
+          "nombre": "Plátano",
+          "precio": 5.8,
+          "calorias": "500",
+          "oferta": false,
+          "imagen": "https://www.importancia.org/wp-content/uploads/platano.jpg",
+          "descuento": "0",
+          "cantidad": 0,
+          "id": 6
+        },
+        {
+          "nombre": "Uva",
+          "precio": 1.98,
+          "calorias": 20,
+          "oferta": true,
+          "imagen": "https://uvasdelvalledeaspe.com/wp-content/uploads/2017/04/Uva-de-Mesa-Variedad-Aledo.png",
+          "descuento": 5,
+          "cantidad": 0,
+          "id": 8
+        },
+        {
+          "nombre": "Pera",
+          "precio": 2.35,
+          "calorias": 120,
+          "colores": [
+            [
+              {
+                "color": "Verde"
+              },
+              {
+                "color": "Amarilla"
+              }
+            ]
+          ],
+          "oferta": false,
+          "imagen": "https://www.labarataxmayor.com/92-large_default/pera.jpg",
+          "descuento": "0",
+          "cantidad": 0,
+          "id": 10
+        }
+      ]
+}

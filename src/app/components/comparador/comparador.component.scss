@@ -1,0 +1,62 @@
+.lista-frutas{
+
+    h2{
+        color: var(--color-black);
+    }
+
+    li{
+        color: var(--color-angular);
+    }
+
+    li:hover{
+        cursor:pointer;
+    }
+
+    .activo{
+        background-color: var(--color-angular);
+        color:var(--color-white);
+    }
+
+}
+
+.btn-carrito{
+    background-color: var(--color-angular);
+    color:var(--color-white);
+}
+
+.dropdown-menu{
+    img{
+        width:30%;
+    }
+
+    .dropdown-item{
+        width:15em;
+        position: relative;
+
+        a{
+            color:var(--color-white);
+            padding:0 5px;
+        }
+    
+        span{
+            position: absolute;
+            top:5px;
+            right:5px;
+            background-color: var(--color-angular);
+            color:var(--color-white);
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+        }
+
+        span:hover{
+            cursor:pointer;
+        }
+
+    }
+
+    
+
+}
+

@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="lista-frutas col-3">
+    <h2>Listado de Frutas</h2>
+    <ul class="list-group">
+      <li *ngFor="let f of frutas" class="list-group-item" (click)="cambiarFruta(f)"
+      [class.activo]="f == fruta1 || f == fruta2">{{f.nombre}}</li>
+    </ul>
+  </div>
+
+  <div class="col-9">
+    <div>
+      <p>Registrar Eventos <b>@Output</b></p>
+      <p>El componente padre puede recibir eventos del componente hijo.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-5">
+        <app-fruta-card [_fruta]="fruta1" [_fruta2]="fruta2" (clickCompra)="actualizarCarro($event)"></app-fruta-card>
+      </div>
+
+      <div class="col-5">
+        <app-fruta-card [_fruta]="fruta2" [_fruta2]="fruta1" (clickCompra)="actualizarCarro($event)"></app-fruta-card>
+      </div>
+
+      <div class="col-2 dropdown">
+          <button class="btn btn-carrito btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fas fa-shopping-cart"></i> <span class="float-right"><b>{{precioTotal | number: '1.0-2': 'es'}}</b> &euro;</span>
+          </button>
+          <ul class="dropdown-menu">
+
+            <li *ngFor="let fruta of carritoCompra, let i = index" class="dropdown-item border-bottom">
+              <img src="{{fruta.imagen}}" alt="Imagen fruta" /> &nbsp;
+              <a (click)="sumarFruta(fruta, i)" class="btn btn-secondary">+</a> <b>{{fruta.cantidad}}</b> <a (click)="restarFruta(fruta)" class="btn btn-secondary">-</a> 
+              <br> {{(fruta.precio - (fruta.descuento * fruta.precio) / 100) | number: '1.0-2': 'es'}} &euro; / {{(fruta.precio - (fruta.descuento * fruta.precio) / 100) * fruta.cantidad | number: '1.0-2': 'es'}} &euro;
+              <span (click)="eliminarFruta(fruta, i)"><i class="fas fa-times"></i></span>
+            </li>
+            
+            <li class="dropdown-item">Total - <b>{{precioTotal | number: '1.0-2': 'es'}}</b> &euro;</li>
+          </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div>
