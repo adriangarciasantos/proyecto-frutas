@@ -15,15 +15,15 @@ export class ZonaPrivadaGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-      console.trace('ZonaPrivadaGuard canActivate');
+    console.trace('ZonaPrivadaGuard canActivate');
 
-      if(!this.loginService.isLogged()){
-        this.router.navigate(['login']);
-        return false;
-      
-      }
-  
-      return true;
+    if(!this.loginService.isLogged()){
+      this.router.navigate(['login']);
+      return false;
+    
+    }
+
+    return true;
 
   }
 }

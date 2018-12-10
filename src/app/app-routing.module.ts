@@ -5,11 +5,12 @@ import { ComparadorComponent } from './components/comparador/comparador.componen
 import { ListadoComponent } from './components/listado/listado.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { LoginComponent } from './components/login/login.component';
+import { ZonaPrivadaGuard } from './guards/zona-privada.guard';
 
 const routes: Routes = [
 
   {path: 'inicio', component: ComparadorComponent},
-  {path: 'listado', component: ListadoComponent},
+  {path: 'listado', component: ListadoComponent, canActivate: [ZonaPrivadaGuard]},
   {path: 'formulario/:id', component: FormularioComponent},
   {path: 'login', component: LoginComponent},
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},

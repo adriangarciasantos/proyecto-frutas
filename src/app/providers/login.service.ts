@@ -12,7 +12,6 @@ export class LoginService {
 
   usuario: Usuario;
 
-
   constructor() {
     console.trace('LoginService constructor');
     

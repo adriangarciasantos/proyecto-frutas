@@ -12,14 +12,17 @@ import { AppComponent } from './app.component';
 import { ComparadorComponent } from './components/comparador/comparador.component';
 import { FrutaCardComponent } from './components/fruta-card/fruta-card.component';
 import { Page404Component } from './components/page404/page404.component';
-
-//Providers o servicios
-import { FrutaService } from './providers/fruta.service';
 import { ListadoComponent } from './components/listado/listado.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { LoginComponent } from './components/login/login.component';
 
+//Providers o servicios
+import { FrutaService } from './providers/fruta.service';
+import { LoginService } from './providers/login.service';
+
 //Guards
+import { ZonaPrivadaGuard } from './guards/zona-privada.guard';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { LoginComponent } from './components/login/login.component';
     HttpClientModule  //Peticiones Http
   ],
   providers: [
-    FrutaService
+    FrutaService,
+    LoginService,
+    ZonaPrivadaGuard
   ],
   bootstrap: [AppComponent]
 })
