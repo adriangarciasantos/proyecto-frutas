@@ -41,7 +41,7 @@
       <div formArrayName="colores">
         <div *ngFor="let color of formulario.get('colores').controls; let i=index;">
           <div [formGroupName]="i" class="mb-2 divColor">
-            <input formControlName="color" type="text" class="form-control" />
+            <input formControlName="color" type="text" class="form-control">
             <i (click)="eliminarColor(i)" class="fas fa-times-circle text-danger borrarColor"></i>
             <small *ngIf="formulario.get('colores').controls[i].invalid" class="form-text text-danger">Mínimo 2 letras y máximo 15</small>
             <small *ngIf="formulario.get('colores').controls[i].valid" class="form-text text-success">Correcto</small>

@@ -15,6 +15,8 @@ export class ComparadorComponent implements OnInit {
   private _fruta2: Fruta;
   private _precioTotal: number;
   private _carritoCompra: Fruta[];
+  private _todas: boolean;
+  private _textoFiltro: string;
 
 
   /*FrutaService es @Injectable por lo cual debemos declararlo en el constructor, 
@@ -27,6 +29,8 @@ export class ComparadorComponent implements OnInit {
     this.fruta2 = new Fruta();
     this.precioTotal = 0;
     this.carritoCompra = [];
+    this.todas = true;
+    this.textoFiltro = 'Todas';
 
   }
 
@@ -90,6 +94,12 @@ export class ComparadorComponent implements OnInit {
     f.cantidad = 0;
     this.carritoCompra.splice(index, 1);
   }
+
+  filtrar(){
+    console.trace('ComparadorComponent filtrar ' + this.todas);
+    this.todas = !this.todas;
+    this.textoFiltro = (this.todas)? 'Todas' : 'En oferta';
+  }
   
   public get frutas(): Fruta[] {
     return this._frutas;
@@ -124,6 +134,20 @@ export class ComparadorComponent implements OnInit {
   }
   public set carritoCompra(value: Fruta[]) {
     this._carritoCompra = value;
+  }
+  
+  public get todas(): boolean {
+    return this._todas;
+  }
+  public set todas(value: boolean) {
+    this._todas = value;
+  }
+  
+  public get textoFiltro(): string {
+    return this._textoFiltro;
+  }
+  public set textoFiltro(value: string) {
+    this._textoFiltro = value;
   }
 
 }

@@ -62,7 +62,7 @@ export class FormularioComponent implements OnInit {
                                 Validators.max(90)
                               ]
                               ),
-      colores: new FormArray([this.crearColorFormGroup()], Validators.minLength(1))
+      colores: new FormArray([], Validators.minLength(1))
     });
 
     this.msg = '';
@@ -83,7 +83,7 @@ export class FormularioComponent implements OnInit {
     });
   }
 
-  crearColorFormGroup(color?: string): FormGroup{
+  crearColorFormGroup(color?:string): FormGroup{
 
     if(color == undefined){
       color = 'Magenta';
@@ -122,13 +122,14 @@ export class FormularioComponent implements OnInit {
     this.formulario.controls.descuento.setValue(this.fruta.descuento);
     this.formulario.controls.imagen.setValue(this.fruta.imagen);
     
-    let arrayColores = this.formulario.get('colores').value as FormArray;
+    let arrayColores = this.formulario.get('colores') as FormArray;
 
-    this.fruta.colores.forEach(color => {
+    this.fruta.colores.forEach(color =>{
       arrayColores.push(this.crearColorFormGroup(color));
     });
 
-    this.formulario.controls.colores.setValue(arrayColores);
+    this.formulario.controls.colores.setValue(this.fruta.colores);
+
   }
 
   sumitar(){
@@ -139,7 +140,13 @@ export class FormularioComponent implements OnInit {
     fruta.nombre = this.formulario.controls.nombre.value;
     fruta.precio = this.formulario.controls.precio.value;
     fruta.calorias = this.formulario.controls.calorias.value;
-    fruta.colores.push(this.formulario.controls.colores.value);
+    //fruta.colores.push(this.formulario.controls.colores.value);
+
+    this.formulario.controls.colores.value.forEach(el => {
+      fruta.colores.push(el);
+    });
+
+
     fruta.oferta = this.formulario.controls.oferta.value;
     fruta.imagen = this.formulario.controls.imagen.value;
     fruta.descuento = this.formulario.controls.descuento.value;

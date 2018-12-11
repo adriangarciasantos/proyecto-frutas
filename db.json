@@ -65,14 +65,12 @@
       "precio": 2.35,
       "calorias": 120,
       "colores": [
-        [
-          {
-            "color": "Verde"
-          },
-          {
-            "color": "Amarilla"
-          }
-        ]
+        {
+          "color": "Verde"
+        },
+        {
+          "color": "Amarilla"
+        }
       ],
       "oferta": false,
       "imagen": "https://www.labarataxmayor.com/92-large_default/pera.jpg",
@@ -85,20 +83,54 @@
       "precio": 2.75,
       "calorias": 120,
       "colores": [
-        [
-          {
-            "color": "Azul"
-          },
-          {
-            "color": "Rojo"
-          }
-        ]
+        {
+          "color": "Azul"
+        },
+        {
+          "color": "Rojo"
+        }
       ],
       "oferta": true,
       "imagen": "https://www.abc.es/Media/201507/29/arandanos--644x362.jpg",
       "descuento": 20,
       "cantidad": 0,
       "id": 11
+    },
+    {
+      "nombre": "Mandarina",
+      "precio": 1.9,
+      "calorias": 80,
+      "colores": [
+        {
+          "color": "Naranja"
+        },
+        {
+          "color": "Rojo"
+        }
+      ],
+      "oferta": false,
+      "imagen": "https://cdn2.salud180.com/sites/default/files/styles/medium/public/field/image/2017/11/mandraina.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 12
+    },
+    {
+      "nombre": "Papaya",
+      "precio": 2.8,
+      "calorias": 130,
+      "colores": [
+        {
+          "color": "Verde"
+        },
+        {
+          "color": "Azul"
+        }
+      ],
+      "oferta": true,
+      "imagen": "https://www.enterbio.es/9581-large_default/papaya.jpg",
+      "descuento": 15,
+      "cantidad": 0,
+      "id": 13
     }
   ]
 }
