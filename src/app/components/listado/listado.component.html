@@ -1,10 +1,12 @@
 
-<div class="row justify-content-between mb-4 mt-2">
-  <h2>Listado de Frutas</h2>
-  <a [routerLink]="['../formulario', -1]" class="btn btn-angular btn-crear">Crear nueva</a>
+<div class="row justify-content-between mb-4 mt-2 tituloListado">
+  <h2 class="tituloListado">Listado de Frutas</h2>
+  <input type="text"[(ngModel)]="busqueda" placeholder="Buscador" class="form-control mt-2 mb-2 buscador" />
+  <i class="fas fa-search fa-2x ml-2 lupa"></i>
+  <a [routerLink]="['../formulario', -1]" class="btn btn-angular btn-crear">Crear nueva fruta</a>
 </div>
 
-<table id="tablaFrutas" class="display" style="width:100%">
+<table id="tablaFrutas" class="display mt-4 mb-4" style="width:100%">
   <thead>
       <tr class="text-center">
           <th>Nombre</th>
@@ -16,7 +18,7 @@
       </tr>
   </thead>
   <tbody>
-      <tr *ngFor="let f of frutas" class="text-center">
+      <tr *ngFor="let f of frutas | filter: busqueda" class="text-center">
           <td><a [routerLink]="['../formulario', f.id]" class="text-danger">{{f.nombre}}</a></td>
           <td>{{(f.precio - (f.descuento * f.precio) / 100) | number: '1.0-2': 'es'}}</td>
           <td>{{f.calorias}}</td>

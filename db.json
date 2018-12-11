@@ -4,7 +4,11 @@
       "nombre": "Kiwi",
       "precio": 3.46,
       "calorias": 24,
-      "colores": [],
+      "colores": [
+        {
+          "color": "Verde"
+        }
+      ],
       "oferta": true,
       "imagen": "https://www.cmdsport.com/app/uploads/2017/02/beneficios-kiwi-fuente-energia.jpeg",
       "descuento": 10,
@@ -12,88 +16,172 @@
       "id": 1
     },
     {
-      "id": 4,
-      "nombre": "Pomelo",
-      "precio": 2.5,
-      "calorias": 13,
-      "oferta": false,
-      "imagen": "http://frutasfercas.com/wp-content/uploads/2018/03/pomelo-1.jpg",
-      "descuento": 0,
-      "cantidad": 0
-    },
-    {
-      "nombre": "Sandía",
-      "precio": 4.5,
-      "calorias": "340",
-      "oferta": true,
-      "imagen": "http://frutas.consumer.es/sites/default/files/sandia.jpg",
-      "descuento": "15",
-      "cantidad": 0,
-      "id": 5
-    },
-    {
-      "nombre": "Uva",
-      "precio": 1.98,
-      "calorias": 20,
-      "oferta": true,
-      "imagen": "https://uvasdelvalledeaspe.com/wp-content/uploads/2017/04/Uva-de-Mesa-Variedad-Aledo.png",
-      "descuento": 5,
-      "cantidad": 0,
-      "id": 8
-    },
-    {
-      "nombre": "Arándanos",
-      "precio": 2.75,
-      "calorias": 120,
+      "nombre": "Naranja",
+      "precio": 1.23,
+      "calorias": 200,
       "colores": [
         {
-          "color": "Azul"
-        },
-        {
-          "color": "Rojo"
+          "color": "Naranja"
         }
       ],
       "oferta": true,
-      "imagen": "https://www.abc.es/Media/201507/29/arandanos--644x362.jpg",
-      "descuento": 20,
+      "imagen": "http://keopsagro.com/wp-content/uploads/2015/11/Producto_Naranja-636x398.jpg",
+      "descuento": 5,
       "cantidad": 0,
-      "id": 11
+      "id": 2
     },
     {
-      "nombre": "Mandarina",
-      "precio": 1.9,
-      "calorias": 80,
+      "nombre": "Tomate",
+      "precio": 2.1,
+      "calorias": 120,
       "colores": [
+        {
+          "color": "Rojo"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": false,
+      "imagen": "http://www.elhuertodelabuelo.es/37-large_default/tomate-cana-andaluz.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 3
+    },
+    {
+      "nombre": "Pomelo",
+      "precio": 1.49,
+      "calorias": 85,
+      "colores": [
+        {
+          "color": "Magenta"
+        },
+        {
+          "color": "Naranja"
+        }
+      ],
+      "oferta": false,
+      "imagen": "https://www.frutadelasarga.com/server/Portal_0008706/img/products/pomelo-rojo_1903658.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 4
+    },
+    {
+      "nombre": "Caqui",
+      "precio": 3.45,
+      "calorias": 150,
+      "colores": [
+        {
+          "color": "Rojo"
+        },
         {
           "color": "Naranja"
         },
         {
-          "color": "Rojo"
+          "color": "Amarillo"
         }
       ],
-      "oferta": false,
-      "imagen": "https://cdn2.salud180.com/sites/default/files/styles/medium/public/field/image/2017/11/mandraina.jpg",
-      "descuento": "0",
+      "oferta": true,
+      "imagen": "https://www.comenaranjas.com/images/stories/virtuemart/product/caqui-rojo-brillante.jpg",
+      "descuento": 20,
       "cantidad": 0,
-      "id": 12
+      "id": 5
     },
     {
-      "nombre": "Papaya",
-      "precio": 2.8,
-      "calorias": 130,
+      "nombre": "Pera",
+      "precio": 1.75,
+      "calorias": 210,
       "colores": [
         {
           "color": "Verde"
         },
         {
-          "color": "Naranja"
+          "color": "Amarillo"
+        }
+      ],
+      "oferta": false,
+      "imagen": "https://www.retif.es/media/image/400x/pera-7x7x9-cm-verde_01.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 6
+    },
+    {
+      "nombre": "Manzana",
+      "precio": 1.98,
+      "calorias": 55,
+      "colores": [
+        {
+          "color": "Rojo"
+        },
+        {
+          "color": "Amarillo"
+        },
+        {
+          "color": "Verde"
         }
       ],
       "oferta": true,
-      "imagen": "https://www.enterbio.es/9581-large_default/papaya.jpg",
+      "imagen": "https://static6.depositphotos.com/1008244/661/v/950/depositphotos_6611121-stock-illustration-yellow-apple.jpg",
       "descuento": 15,
       "cantidad": 0,
-      "id": 13
+      "id": 7
+    },
+    {
+      "nombre": "Melón",
+      "precio": 7.05,
+      "calorias": 344,
+      "colores": [
+        {
+          "color": "Blanco"
+        },
+        {
+          "color": "Amarillo"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": true,
+      "imagen": "https://www.heb.com.mx/media/catalog/product/cache/20/image/d954a60aa48ef57022b0eb878e93bc1f/m/e/melon-chino-1-kg23595_x1.jpg",
+      "descuento": 10,
+      "cantidad": 0,
+      "id": 8
+    },
+    {
+      "nombre": "Sandía",
+      "precio": 5.6,
+      "calorias": 30,
+      "colores": [
+        {
+          "color": "Rojo"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": false,
+      "imagen": "http://www.consorfrut.com/wp-content/uploads/2017/05/sandia-consorfrut-frutas-mes-mayo.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 9
+    },
+    {
+      "nombre": "Fresa",
+      "precio": 1.8,
+      "calorias": 120,
+      "colores": [
+        {
+          "color": "Rojo"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": true,
+      "imagen": "https://static9.depositphotos.com/1642482/1149/i/450/depositphotos_11491656-stock-photo-strawberry.jpg",
+      "descuento": 5,
+      "cantidad": 0,
+      "id": 10
     }
   ]
 }
