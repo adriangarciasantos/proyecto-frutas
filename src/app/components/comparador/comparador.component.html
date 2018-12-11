@@ -1,18 +1,20 @@
 <div class="row">
   <div class="lista-frutas col-3">
     <h2>Listado de Frutas</h2>
+
+    <label class="container">{{textoFiltro}}
+      <input type="checkbox" checked="checked" (change)="filtrar()" />
+      <span class="checkmark"></span>
+    </label>
+
     <ul class="list-group">
-      <li *ngFor="let f of frutas" class="list-group-item" (click)="cambiarFruta(f)"
+      <li *ngFor="let f of frutas | oferta : todas" class="list-group-item" (click)="cambiarFruta(f)"
       [class.activo]="f == fruta1 || f == fruta2">{{f.nombre}}</li>
     </ul>
   </div>
 
   <div class="col-9">
-    <div>
-      <p>Registrar Eventos <b>@Output</b></p>
-      <p>El componente padre puede recibir eventos del componente hijo.</p>
-    </div>
-
+    
     <div class="row">
 
       <div class="col-5">

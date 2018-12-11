@@ -20,6 +20,9 @@ import { LoginComponent } from './components/login/login.component';
 import { FrutaService } from './providers/fruta.service';
 import { LoginService } from './providers/login.service';
 
+//Pipes
+import { OfertaPipe } from './pipes/oferta.pipe';
+
 //Guards
 import { ZonaPrivadaGuard } from './guards/zona-privada.guard';
 
@@ -32,7 +35,8 @@ import { ZonaPrivadaGuard } from './guards/zona-privada.guard';
     Page404Component,
     ListadoComponent,
     FormularioComponent,
-    LoginComponent
+    LoginComponent,
+    OfertaPipe
   ],
   imports: [
     BrowserModule,
