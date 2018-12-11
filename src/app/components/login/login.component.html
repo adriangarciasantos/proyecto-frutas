@@ -6,7 +6,7 @@
   <li>Password = <b>admin</b></li>
 </ul>
 
-<p class="text-danger"><b>{{msg}}</b></p>
+<p *ngIf="msg != ''" class="text-danger loginMal"><b>{{msg}}</b></p>
 
 <form [formGroup]="formulario" (ngSubmit)="sumitar()" novalidate>
 

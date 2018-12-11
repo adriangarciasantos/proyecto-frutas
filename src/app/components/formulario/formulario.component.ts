@@ -140,7 +140,6 @@ export class FormularioComponent implements OnInit {
     fruta.nombre = this.formulario.controls.nombre.value;
     fruta.precio = this.formulario.controls.precio.value;
     fruta.calorias = this.formulario.controls.calorias.value;
-    //fruta.colores.push(this.formulario.controls.colores.value);
 
     this.formulario.controls.colores.value.forEach(el => {
       fruta.colores.push(el);
@@ -173,7 +172,10 @@ export class FormularioComponent implements OnInit {
     console.debug('FormularioComponent eliminar -> ' + id);
     this.frutaService.eliminar(id).subscribe(data =>{
       console.debug('Fruta eliminada -> ' + data);
-    })
+      this.frutaService.getAll().subscribe(data =>{
+
+      });
+    });
   }
 
 }

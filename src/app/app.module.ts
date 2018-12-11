@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
@@ -22,6 +22,7 @@ import { LoginService } from './providers/login.service';
 
 //Pipes
 import { OfertaPipe } from './pipes/oferta.pipe';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 //Guards
 import { ZonaPrivadaGuard } from './guards/zona-privada.guard';
@@ -43,7 +44,8 @@ import { ZonaPrivadaGuard } from './guards/zona-privada.guard';
     AppRoutingModule,
     FormsModule,  //Banana in a Box [(ngModule)]
     ReactiveFormsModule,
-    HttpClientModule  //Peticiones Http
+    HttpClientModule,  //Peticiones Http
+    Ng2SearchPipeModule
   ],
   providers: [
     FrutaService,
