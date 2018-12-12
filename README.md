@@ -3,7 +3,8 @@
 Proyecto para gestionar gestionar y comparar frutas utilizando un servicio rest.
 
 ## Contenido de la app
-    - Comparador (página de inicio): Compara el precio y Kcal de dos frutas que puedes seleccionar de una lista. Si 'compras' la fruta se añadirá al carrito.
+    - Comparador (página de inicio): Compara el precio y Kcal de dos frutas que puedes seleccionar de una lista. 
+    Si 'compras' la fruta se añadirá al carrito.
 
     - Zona privada (listado de frutas): Un listado en forma de tabla donde puedes ver todas las frutas, desde aquí puedes gestionar las frutas.
 
