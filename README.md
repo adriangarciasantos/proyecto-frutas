@@ -11,7 +11,7 @@ Proyecto para gestionar gestionar y comparar frutas utilizando un servicio rest.
 
     - Formulario: Un formulario para crear, modificar o eliminar las frutas.
 
-    - Login: Para acceder a la zona privada debes registrarte en la app. [Usuario de prueba](#usuario-de-prueba).
+    - Login: Para acceder a la zona privada debes registrarte en la app.[Usuario de prueba](#usuario-de-prueba).
 
 
 ## Arrancar api-rest
