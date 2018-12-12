@@ -31,8 +31,7 @@ Se debe instalar en la carpeta raíz del proyecto.
 
 ## Usuario de prueba
 Para acceder a la zona privada de la aplicación existe un usuario de prueba:
-    - Nombre: **admin**
-    - Password: **admin**
+    - Nombre
 
 ## Imagen de la aplicación
 ![Imagen de portada de la app](https://github.com/adriangarciasantos/proyecto-frutas/blob/master/src/assets/img/app-cover-img.PNG)
