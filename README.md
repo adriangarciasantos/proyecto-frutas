@@ -6,7 +6,8 @@ Proyecto para gestionar gestionar y comparar frutas utilizando un servicio rest.
     - Comparador (página de inicio): Compara el precio y Kcal de dos frutas que puedes seleccionar de una lista. 
     Si 'compras' la fruta se añadirá al carrito.
 
-    - Zona privada (listado de frutas): Un listado en forma de tabla donde puedes ver todas las frutas, desde aquí puedes gestionar las frutas.
+    - Zona privada (listado de frutas): Un listado en forma de tabla donde puedes ver todas las frutas, 
+    desde aquí puedes gestionar las frutas.
 
     - Formulario: Un formulario para crear, modificar o eliminar las frutas.
 
@@ -33,6 +34,7 @@ Para acceder a la zona privada de la aplicación existe un usuario de prueba:
     - Nombre: **admin**
     - Password: **admin**
 
-![Imagen de portada de la app](https://github.com/adriangarciasantos/proyecto-frutas/blob/master/src/assets/img/app-cover-img.PNG)
+## Imagen de la aplicación
+![Imagen de portada de la app](htdtps://github.com/adriangarciasantos/proyecto-frutas/blob/master/src/assets/img/app-cover-img.PNG)
 
 
