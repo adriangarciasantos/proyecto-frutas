@@ -11,10 +11,11 @@
       <input type="checkbox" (change)="filtrar()">
       <span class="slider round"></span>
     </label>
-
-    <ul class="list-group">
+    
+    <ul class="list-group ul-frutas">
       <li *ngFor="let f of frutas | oferta : todas | filter: busqueda" class="list-group-item" (click)="cambiarFruta(f)"
       [class.activo]="f == fruta1 || f == fruta2">{{f.nombre}}</li>
+      <li *ngIf="(frutas | oferta : todas | filter: busqueda).length === 0" class="list-group-item">No hay resultados para la búsqueda '{{busqueda}}'</li>
     </ul>
 
   </div>

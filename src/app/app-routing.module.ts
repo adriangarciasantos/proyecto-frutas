@@ -13,7 +13,7 @@ const routes: Routes = [
 
   {path: 'inicio', component: ComparadorComponent},
   {path: 'listado', component: ListadoComponent, canActivate: [ZonaPrivadaGuard]},
-  {path: 'formulario/:id', component: FormularioComponent},
+  {path: 'formulario/:id', component: FormularioComponent, canActivate: [ZonaPrivadaGuard]},
   {path: 'login', component: LoginComponent},
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: '**', component: Page404Component}

@@ -1,6 +1,6 @@
 .contenedor{
     
-    margin-bottom:2em;
+    //margin-bottom:2em;
     
     .lista-frutas{
 
@@ -9,7 +9,7 @@
         }
     
         ul{
-            height:295px;
+            max-height:295px;
             overflow-y: auto;
         }
     
@@ -146,11 +146,8 @@
             }
     
         }
-    
         
-    
     }
-    
     
 }
 
