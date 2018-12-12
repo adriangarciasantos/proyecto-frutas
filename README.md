@@ -11,7 +11,7 @@ Proyecto para gestionar gestionar y comparar frutas utilizando un servicio rest.
 
     - Formulario: Un formulario para crear, modificar o eliminar las frutas.
 
-    - Login: Para acceder a la zona privada debes registrarte en la app.[Usuario de prueba](#usuario-de-prueba)
+    - Login: Para acceder a la zona privada debes registrarte en la app.
 
 
 ## Arrancar api-rest
@@ -30,8 +30,8 @@ El comando es el siguiente `npm i ng2-search-filter --save`.
 Se debe instalar en la carpeta raíz del proyecto.
 
 ## Usuario de prueba
-Para acceder a la zona privada de la aplicación existe un usuario de prueba:
-    - Nombre
+    - Nombre: **admin**
+    - Password: **admin**
 
 ## Imagen de la aplicación
 ![Imagen de portada de la app](https://github.com/adriangarciasantos/proyecto-frutas/blob/master/src/assets/img/app-cover-img.PNG)
