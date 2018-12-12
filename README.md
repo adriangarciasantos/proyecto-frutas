@@ -35,6 +35,6 @@ Para acceder a la zona privada de la aplicación existe un usuario de prueba:
     - Password: **admin**
 
 ## Imagen de la aplicación
-![Imagen de portada de la app](htdtps://github.com/adriangarciasantos/proyecto-frutas/blob/master/src/assets/img/app-cover-img.PNG)
+![Imagen de portada de la app](https://github.com/adriangarciasantos/proyecto-frutas/blob/master/src/assets/img/app-cover-img.PNG)
 
 
