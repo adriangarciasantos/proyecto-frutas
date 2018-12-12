@@ -30,6 +30,7 @@ El comando es el siguiente `npm i ng2-search-filter --save`.
 Se debe instalar en la carpeta raíz del proyecto.
 
 ## Usuario de prueba
+Para acceder a la zona privadaexiste un usuario de prueba:
     - Nombre: **admin**
     - Password: **admin**
 
