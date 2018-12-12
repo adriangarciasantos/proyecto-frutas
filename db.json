@@ -182,6 +182,186 @@
       "descuento": 5,
       "cantidad": 0,
       "id": 10
+    },
+    {
+      "nombre": "Plátano",
+      "precio": 1.63,
+      "calorias": 49,
+      "colores": [
+        {
+          "color": "Amarillo"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": false,
+      "imagen": "https://www.abc.es/media/sociedad/2017/12/02/platanos-potasio-salud-k3gG-U212262406718N6D-620x400@abc.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 11
+    },
+    {
+      "nombre": "Mandarina",
+      "precio": 2.2,
+      "calorias": 30,
+      "colores": [
+        {
+          "color": "Naranja"
+        }
+      ],
+      "oferta": true,
+      "imagen": "https://www.nbnaturalcare.com/wp-content/uploads/2018/11/mandarina.jpg",
+      "descuento": 15,
+      "cantidad": 0,
+      "id": 12
+    },
+    {
+      "nombre": "Arándanos",
+      "precio": 0.66,
+      "calorias": 17,
+      "colores": [
+        {
+          "color": "Azul"
+        },
+        {
+          "color": "Rojo"
+        }
+      ],
+      "oferta": false,
+      "imagen": "https://exquisitefruits.com/wp-content/uploads/2018/03/arandano.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 13
+    },
+    {
+      "nombre": "Piña",
+      "precio": 4.8,
+      "calorias": 110,
+      "colores": [
+        {
+          "color": "Amarillo"
+        },
+        {
+          "color": "Marrón"
+        }
+      ],
+      "oferta": true,
+      "imagen": "http://cdn.chapintv.com/files/2018/06/29/rodajas-de-pi%C3%B1a.jpg",
+      "descuento": 30,
+      "cantidad": 0,
+      "id": 14
+    },
+    {
+      "nombre": "Coco",
+      "precio": 3.9,
+      "calorias": 59,
+      "colores": [
+        {
+          "color": "Blanco"
+        },
+        {
+          "color": "Marrón"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": true,
+      "imagen": "https://www.mujerhoy.com/pic.aspx?w=640&h=530&img=coco9792350931.jpg",
+      "descuento": 5,
+      "cantidad": 0,
+      "id": 15
+    },
+    {
+      "nombre": "Papaya",
+      "precio": 10.6,
+      "calorias": 300,
+      "colores": [
+        {
+          "color": "Naranja"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": true,
+      "imagen": "https://biotrendies.com/wp-content/uploads/2015/07/Papaya.jpg",
+      "descuento": 20,
+      "cantidad": 0,
+      "id": 16
+    },
+    {
+      "nombre": "Cerezas",
+      "precio": 1.6,
+      "calorias": 40,
+      "colores": [
+        {
+          "color": "Rojo"
+        }
+      ],
+      "oferta": false,
+      "imagen": "http://www.frutaseladio.com/res/uploads/eladio-cereza.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 17
+    },
+    {
+      "nombre": "Melocotón",
+      "precio": 2.7,
+      "calorias": 120,
+      "colores": [
+        {
+          "color": "Naranja"
+        },
+        {
+          "color": "Rojo"
+        }
+      ],
+      "oferta": true,
+      "imagen": "http://www.5septiembre.cu/wp-content/uploads/2017/07/Foto-melocot%C3%B3n-1-copia-listo.jpg",
+      "descuento": 40,
+      "cantidad": 0,
+      "id": 18
+    },
+    {
+      "nombre": "Uvas",
+      "precio": 1.65,
+      "calorias": 78,
+      "colores": [
+        {
+          "color": "Azul"
+        },
+        {
+          "color": "Rojo"
+        },
+        {
+          "color": "Verde"
+        }
+      ],
+      "oferta": false,
+      "imagen": "https://www.lechepuleva.es/documents/13930/203222/uva_g.jpg",
+      "descuento": "0",
+      "cantidad": 0,
+      "id": 19
+    },
+    {
+      "nombre": "Mango",
+      "precio": 5.25,
+      "calorias": 90,
+      "colores": [
+        {
+          "color": "Rojo"
+        },
+        {
+          "color": "Amarillo"
+        }
+      ],
+      "oferta": true,
+      "imagen": "https://d50xhnwqnrbqk.cloudfront.net/images/bogota/super-ahorro/products/large/mango.png",
+      "descuento": 10,
+      "cantidad": 0,
+      "id": 20
     }
   ]
 }

@@ -6,35 +6,39 @@
   <a [routerLink]="['../formulario', -1]" class="btn btn-angular btn-crear">Crear nueva fruta</a>
 </div>
 
-<table id="tablaFrutas" class="display mt-4 mb-4" style="width:100%">
-  <thead>
-      <tr class="text-center">
-          <th>Nombre</th>
-          <th>Precio</th>
-          <th>Calorías</th>
-          <th>Oferta</th>
-          <th>Descuento</th>
-          <th>Imagen</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let f of frutas | filter: busqueda" class="text-center">
-          <td><a [routerLink]="['../formulario', f.id]" class="text-danger">{{f.nombre}}</a></td>
-          <td>{{(f.precio - (f.descuento * f.precio) / 100) | number: '1.0-2': 'es'}}</td>
-          <td>{{f.calorias}}</td>
-          <td>{{(f.oferta)? 'Sí' : 'No'}}</td>
-          <td>{{f.descuento}}</td>
-          <td><img src="{{f.imagen}}" alt="Imagen_fruta" class="imgFruta" /></td>
-      </tr>
-  </tbody>
-  <tfoot>
-      <tr class="text-center">
-          <th>Nombre</th>
-          <th>Precio</th>
-          <th>Calorías</th>
-          <th>Oferta</th>
-          <th>Descuento</th>
-          <th>Imagen</th>
-      </tr>
-  </tfoot>
-</table>
+<div class="tableContainer mt-4 mb-4">
+
+    <table id="tablaFrutas" class="display" style="width:100%">
+    <thead>
+        <tr class="text-center">
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Calorías</th>
+            <th>Oferta</th>
+            <th>Descuento</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of frutas | filter: busqueda" class="text-center">
+            <td><a [routerLink]="['../formulario', f.id]" class="text-danger">{{f.nombre}}</a></td>
+            <td>{{(f.precio - (f.descuento * f.precio) / 100) | number: '1.0-2': 'es'}}</td>
+            <td>{{f.calorias}}</td>
+            <td>{{(f.oferta)? 'Sí' : 'No'}}</td>
+            <td>{{f.descuento}}</td>
+            <td><img src="{{f.imagen}}" alt="Imagen_fruta" class="imgFruta" /></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr class="text-center">
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Calorías</th>
+            <th>Oferta</th>
+            <th>Descuento</th>
+            <th>Imagen</th>
+        </tr>
+    </tfoot>
+    </table>
+
+</div>

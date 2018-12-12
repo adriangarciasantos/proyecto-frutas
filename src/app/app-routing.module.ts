@@ -7,6 +7,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { LoginComponent } from './components/login/login.component';
 import { ZonaPrivadaGuard } from './guards/zona-privada.guard';
 
+//, canActivate: [ZonaPrivadaGuard]
+
 const routes: Routes = [
 
   {path: 'inicio', component: ComparadorComponent},

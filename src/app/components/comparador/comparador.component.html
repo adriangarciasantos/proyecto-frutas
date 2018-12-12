@@ -1,8 +1,8 @@
-<div class="row">
+<div class="row contenedor">
   <div class="lista-frutas col-3">
     <h2>Listado de Frutas</h2>
 
-    <input type="text"[(ngModel)]="busqueda" placeholder="Buscar por nombre" class="form-control mt-2 mb-2 buscador" />
+    <input type="text"[(ngModel)]="busqueda" placeholder="Buscador" class="form-control mt-2 mb-2 buscador" />
     <i class="fas fa-search fa-2x ml-2 lupa"></i>
 
     <!-- Rounded switch -->
@@ -16,6 +16,7 @@
       <li *ngFor="let f of frutas | oferta : todas | filter: busqueda" class="list-group-item" (click)="cambiarFruta(f)"
       [class.activo]="f == fruta1 || f == fruta2">{{f.nombre}}</li>
     </ul>
+
   </div>
 
   <div class="col-9">

@@ -21,3 +21,17 @@ img{
     background-color: var(--color-white);
     border-color: var(--color-angular);
 }
+
+.btn-angular:focus{
+    box-shadow: none;
+}
+
+.valido:focus{
+    border-color:#ced4da;
+    box-shadow: 0px 0px 5px 1px rgba(0,255,0,1);
+}
+
+.invalido:focus{
+    border-color:#ced4da;
+    box-shadow: 0px 0px 5px 1px rgba(255,0,0,1);
+}

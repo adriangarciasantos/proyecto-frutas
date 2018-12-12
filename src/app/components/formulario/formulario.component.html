@@ -17,21 +17,21 @@
 
     <div class="form-group">
       <label for="nombre">Nombre:</label>
-      <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Min 2 y max 50" />
+      <input type="text" formControlName="nombre" class="form-control {{(formulario.controls.nombre.valid)? 'valido' : 'invalido'}}" id="nombre" placeholder="Min 2 y max 50" />
       <small *ngIf="formulario.controls.nombre.invalid && formulario.controls.nombre.touched" class="form-text text-danger">Mínimo 2 letras máximo 50 letras</small>
       <small *ngIf="formulario.controls.nombre.valid && formulario.controls.nombre.touched" class="form-text text-success">Correcto</small>
     </div>
 
     <div class="form-group">
       <label for="precio">Precio:</label>
-      <input type="number" formControlName="precio" class="form-control" id="precio" min="0.01" max="999" step="0.01" />
+      <input type="number" formControlName="precio" class="form-control {{(formulario.controls.precio.valid)? 'valido' : 'invalido'}}" id="precio" min="0.01" max="999" step="0.01" />
       <small *ngIf="formulario.controls.precio.invalid && formulario.controls.precio.touched" class="form-text text-danger">Mínimo 0,01 máximo 999</small>
       <small *ngIf="formulario.controls.precio.valid && formulario.controls.precio.touched" class="form-text text-success">Correcto</small>
     </div>
 
     <div class="form-group">
       <label for="calorias">Calorías:</label>
-      <input type="number" formControlName="calorias" class="form-control" id="calorias" min="0" max="999" />
+      <input type="number" formControlName="calorias" class="form-control {{(formulario.controls.calorias.valid)? 'valido' : 'invalido'}}" id="calorias" min="0" max="999" />
       <small *ngIf="formulario.controls.calorias.invalid && formulario.controls.calorias.touched" class="form-text text-danger">Mínimo 0,01 máximo 999</small>
       <small *ngIf="formulario.controls.calorias.valid && formulario.controls.calorias.touched" class="form-text text-success">Correcto</small>
     </div>
@@ -42,7 +42,7 @@
       <div formArrayName="colores">
         <div *ngFor="let color of formulario.get('colores').controls; let i=index;">
           <div [formGroupName]="i" class="mb-2 divColor">
-            <input formControlName="color" type="text" class="form-control">
+            <input formControlName="color" type="text" class="form-control {{(formulario.get('colores').controls[i].valid)? 'valido' : 'invalido'}}">
             <i (click)="eliminarColor(i)" class="fas fa-times-circle text-danger borrarColor"></i>
             <small *ngIf="formulario.get('colores').controls[i].invalid" class="form-text text-danger">Mínimo 2 letras y máximo 15</small>
             <small *ngIf="formulario.get('colores').controls[i].valid" class="form-text text-success">Correcto</small>
@@ -60,7 +60,7 @@
 
     <div class="form-group" [hidden]="!formulario.controls.oferta.value">
       <label for="descuento">Descuento:</label>
-      <input type="number" formControlName="descuento" class="form-control" id="descuento" min="0" max="100" step="5" maxlength="2" />
+      <input type="number" formControlName="descuento" class="form-control {{(formulario.controls.descuento.valid)? 'valido' : 'invalido'}}" id="descuento" min="0" max="100" step="5" maxlength="2" />
       <small *ngIf="formulario.controls.descuento.invalid && formulario.controls.descuento.touched" class="form-text text-danger">Mínimo 5% máximo 90%</small>
       <small *ngIf="formulario.controls.descuento.valid && formulario.controls.descuento.touched" class="form-text text-success">Correcto</small>
     </div>
@@ -68,7 +68,7 @@
     <div class="form-group">
       <label for="imagen">Imagen:</label>
       <img src="{{formulario.controls.imagen.value}}" alt="Imagen destacada" class="imgDestacada" />
-      <input type="text" formControlName="imagen" class="form-control" id="imagen" placeholder="URL de la imagen con extensión .png o .jp(e)g" />
+      <input type="text" formControlName="imagen" class="form-control mt-4 {{(formulario.controls.imagen.valid)? 'valido' : 'invalido'}}" id="imagen" placeholder="URL de la imagen con extensión .png o .jp(e)g" />
       <small *ngIf="formulario.controls.imagen.invalid && formulario.controls.imagen.touched" class="form-text text-danger">Formato inadecuado .png o .jpg o .jpeg</small>
       <small *ngIf="formulario.controls.imagen.valid && formulario.controls.imagen.touched" class="form-text text-success">Correcto</small>
     </div>
